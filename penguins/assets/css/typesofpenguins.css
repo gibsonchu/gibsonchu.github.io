@@ -116,7 +116,7 @@ a:active {
 	margin: 0 auto;
 	width: 300px;
 	height: 100%;
-	left: 300px;
+	left: 20%;
 	position: absolute;
 }
 
@@ -139,13 +139,14 @@ a:active {
     width: 40px;
     height: 40px;
     padding: 10px;
-    left: 60px;
+    left: 5%;
     top: 50%;
     margin-top: -30px;
     cursor: pointer;
     -webkit-transition: all 0.3s;
     left: 250px;
     z-index: 1000;
+    opacity: 0.2;
 }
 
 #right {
@@ -153,13 +154,12 @@ a:active {
     width: 40px;
     height: 40px;
     padding: 10px;
-    right: 60px;
     top: 50%;
     margin-top: -30px;
     cursor: pointer;
     -webkit-transition: all 0.3s;
     transform: rotate(180deg);
-    left: 650px;
+    left: 43%;
     z-index: 1000;
 }
 
@@ -173,7 +173,7 @@ a:active {
 	width: 500px;
 	height: 100%;
 	position: absolute;
-	left: 800px;
+	left: 50%;
 	top: 50%;
 	transform: translateY(-50%);
 	text-align: center;
