@@ -44,6 +44,7 @@ a {
 	color: white;
 	z-index: 1;
 	text-align: center;
+	height: 250px;
 }
 
 #title {
@@ -51,12 +52,32 @@ a {
 	font-size: 72px;
 	margin-bottom: -25px;
 	text-shadow: 0px 2px 20px black;
+	display: none;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0;
 }
 
 #title-additional {
 	font-family: 'Palanquin', sans-serif;
 	font-size: 18px;
 	text-shadow: 0px 2px 20px black;
+	position: relative;
+	top: 100px;
+}
+
+#title-additional #italic {
+	font-style: italic;
+	display: none;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#norm {
+	position: relative;
+	top: 30px;
 }
 
 #nav {
@@ -65,6 +86,7 @@ a {
 	transform: translateY(-50%) translateX(-50%);
 	z-index: 1;
 	top: 68%;
+	display: none;
 }
 
 .nav-stuff {
