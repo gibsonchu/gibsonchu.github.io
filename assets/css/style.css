@@ -19,7 +19,8 @@ a img {
 }
 
 .home-page {
-	max-width: 750px;
+	/*max-width: 750px;*/
+	max-width: 50vw;
 	line-height: 1.55em;
 	margin-top: 150px;
 }
@@ -154,4 +155,22 @@ u1 {
 .social-container h2 {
     font-size: 13px;
     margin-top: 5px;
+}
+
+/*Add Experience*/
+
+.footer {
+	font-family: 'PT Serif', serif;
+	font-size: 15px;
+	opacity: 0.6;
+	letter-spacing: 0.5px;
+	margin-top: 30px;
+}
+
+.hiddensecret {
+	display: none;
+}
+
+.hiddensecret:hover {
+	display: block;
 }
