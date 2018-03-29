@@ -26,7 +26,7 @@ nav a:hover {
     opacity: 1;
 }
 
-/* CONTENT */
+/** CONTENT **/
 #main-content {
     max-width: 700px;
     margin: 0 auto;
@@ -43,6 +43,7 @@ nav a:hover {
     font-size: 14px;
     width: 450px;
     margin-left: 30px;
+    margin-top: 30px; /* should be commented out in the future when nav returns */
 }
 
 /** PROFILE **/
