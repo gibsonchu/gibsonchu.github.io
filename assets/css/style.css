@@ -410,7 +410,7 @@ a:hover {
 }
 
 #escape-img {
-  background-image: url(../img/escape/escape.png);
+  background-image: url(../img/escape/escape.PNG);
   background-color: black;
 }
 
@@ -424,7 +424,7 @@ a:hover {
 }
 
 #cal-hacks-img {
-  background-image: url(../img/cal-hacks/icon.png);
+  background-image: url(../img/cal-hacks/Icon.png);
   background-color: rgb(151, 208, 237);
 }
 
