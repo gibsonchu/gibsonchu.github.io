@@ -160,9 +160,8 @@ a:hover {
   /*opacity: 0.2;*/
   /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
   cursor: pointer;
-  transition: 0.2s;
-  background-color: #ffffff;
 }
+
 
 #learn {
   padding-top: 20px;
@@ -375,6 +374,11 @@ a:hover {
   border-radius: 17px;
   color: #0076FF;
   /*color: #F5F5F5; use for dark mode*/
+}
+
+
+.not-selected-tag {
+  background-color: #ffffff;
 }
 
 .card:hover .card-smol {
