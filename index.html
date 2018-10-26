@@ -1,57 +1,241 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Lora|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/img/about/favicon.png"/>
     <title>Gibson Chu</title>
 </head>
-<body>
-    <main>
-<!--         <nav>
-            <a href="./index.html">about</a>
-            <a href="/">projects</a>
-            <a href="/">intiatives</a>
-            <a href="/">articles</a>
-            <a href="/">photography</a>
-        </nav> -->
-        
-        <section id="main-content">
-            <section id="pic">
-                <p>
-                    <img id="profile" src="assets/img/profile/profile.jpg">
-                </p>            
-            </section>
-            <section id="about">
-                <p>
-                    Hello!
-                </p>
-                <p>
-                    I'm <b>Gibson Chu</b>, a sophomore at UC Berkeley studying economics and cognitive science with a focus
-                    in data science, who loves to tell stories through technology to help to expose and resolve social issues
-                    in both data journalism and product management. 
-                </p>
-                <p>
-                    <b>You've found my temporary landing page while I work on my new website!</b>
-                </p>
-                <p>
-                    When I'm not organizing my hat collection or owning my friends at Mario Kart Wii, I research on minimum wage for the 
-                    Institute for Research on Labor and Employment, develop data-modules for the UC Berkeley Data Science Division, 
-                    consult about blockchain for Berkeley Business Society, lead diversity initiatives for Cal Hacks, and report on 
-                    crime and courts for the Daily Californian.
-                </p>
- <!--                <p>
-                    Thanks for getting to know me and my tiny corner of the internet. 
-                </p> -->
-                <p>
-                    Feel free to reach out to me anytime at my <a href="mailto:gibsonchu@berkeley.edu" target="_blank">email</a>, through <a href="https://twitter.com/thegibsonchu" target="_blank">Twitter</a>, or on <a href="http://www.linkedin.com/in/gibsontchu/" target="_blank">LinkedIn</a>. You can see more of my work on my <a href="https://github.com/gibsonchu" target="_blank">Github</a>, and you can find my resume <a href="https://tinyurl.com/yamw7xuz" target="_blank">here</a>.
-                </p>
-            </section>
-        </section>
-        
-        <section id="contact">
-            
-        </section>
-    </main>
+<body class="dark">
+    <div id="landing-home-icon">
+        <a href="index.html">
+            <img id="home" src="assets/img/about/transparent.png">
+        </a>
+    </div>
+    <div id="landing-page">
+        <div id="landing-textbox">
+            <div>
+                <p class="h1 landing-title">Hello! I’m Gibson.</p>
+                <p class="h2 landing-subline">I lead initiatives drawn from empathetic design and meaningful data.</p>
+                <p class="h2 landing-descrip">Check out what I’ve done so far:</p>
+                <div class="landing-tag-container">
+                    <div class="card-tag landing-card-tag">Product</div>
+                    <div class="card-tag landing-card-tag">Strategy</div>
+                    <div class="card-tag landing-card-tag">Design</div>
+                    <div class="card-tag landing-card-tag">Data</div>
+                    <div class="card-tag landing-card-tag">Media</div>
+                </div>
+                <p class="h2 landing-descrip" id="learn">You can learn more about me <a href="about.html">here</a>.</p>
+<!--                 <div class="dark-mode">
+                    <p class="h3 switch-mode-label">Use night mode</p>
+                    <label class="switch switch-features" role="switch">
+                        <input type="checkbox" class="switch-toggle" checked>
+                        <span class="switch-round"></span>
+                    </label>
+                </div>    -->
+            </div>
+        </div>
+        <div class="card-collection dark">
+            <div class="card">
+                <a href="projects/hustle.html">
+                    <div class="card-img card-smol" id="hustle-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">Hustle</p>
+                        <p class="h5 card-descrip">Shipped and redesigned new features for web and mobile application.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Product</div>
+                            <div class="card-tag">Strategy</div>
+                            <div class="card-tag">Design</div>
+                            <div class="card-tag">Data</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/bmgf.html">
+                    <div class="card-img card-smol" id="bmgf-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">The Gates Foundation</p>
+                        <p class="h5 card-descrip">Recommended key education players for African vaccine development.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Strategy</div>
+                            <div class="card-tag">Data</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/zillow.html">
+                    <div class="card-img card-smol" id="zillow-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">Zillow Group</p>
+                        <p class="h5 card-descrip">Proposed blockchain for financial transactions and real-estate database.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Strategy</div>
+                            <div class="card-tag">Data</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/cwed.html">
+                    <div class="card-img card-smol" id="cwed-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">IRLE: CWED</p>
+                        <p class="h5 card-descrip">Measured effects of state/local minimum wage on workers’ health.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Data</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/escape.html">
+                    <div class="card-img card-reg" id="escape-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">"Escape"</p>
+                        <p class="h5 card-descrip">Developed a tile-rendering world-generation game for players to escape.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Product</div>
+                            <div class="card-tag">Design</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/nutrition.html">
+                    <div class="card-img card-reg" id="nutrition-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">Nutri-scan</p>
+                        <p class="h5 card-descrip">Built an image recognition calorie mobile-application scanner.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Product</div>
+                            <div class="card-tag">Design</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/rating.html">
+                    <div class="card-img card-reg" id="rating-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">Higher Rating w/ More Money</p>
+                        <p class="h5 card-descrip">Modeled relationship between box office earnings and movie’s rating.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Data</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/cal-hacks.html">
+                    <div class="card-img card-reg" id="cal-hacks-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">Cal Hacks</p>
+                        <p class="h5 card-descrip">Lead UCB's hackathon, with new diversity and accelerator initiatives.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Product</div>
+                            <div class="card-tag">Strategy</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/asuc.html">
+                    <div class="card-img card-smol" id="asuc-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">ASUC Senator Lee's Office</p>
+                        <p class="h5 card-descrip">Manage senator's public platform focused on funding and transparency.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Strategy</div>
+                            <div class="card-tag">Design</div>
+                            <div class="card-tag">Media</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/modules.html">
+                    <div class="card-img card-smol" id="modules-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">UCB Institute for Data Science</p>
+                        <p class="h5 card-descrip">Develop weekly Python and data visulization modules for students.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Design</div>
+                            <div class="card-tag">Data</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/data-8.html">
+                    <div class="card-img card-smol" id="data-8-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">UCB College of Engineering</p>
+                        <p class="h5 card-descrip">Mentor students weekly on Python and data statistics projects.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Design</div>
+                            <div class="card-tag">Data</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/daily-cal.html">
+                    <div class="card-img card-smol" id="daily-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">The Daily Californian</p>
+                        <p class="h5 card-descrip">Report/edit weekly stories and in-depth investigative pieces.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Strategy</div>
+                            <div class="card-tag">Data</div>
+                            <div class="card-tag">Media</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/creative.html">
+                    <div class="card-img card-smol" id="creative-img">
+                        <div class="opaque"></div>
+                    </div>
+                    <div class="card-text">
+                        <p class="h4 card-title">Gibson Chu Creative</p>
+                        <p class="h5 card-descrip">Personal photo business shooting portraiture and event photography.</p>
+                        <div class="tag-container">
+                            <div class="card-tag">Product</div>
+                            <div class="card-tag">Design</div>
+                            <div class="card-tag">Media</div>
+                        </div>       
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div> 
+    <script src="script.js"></script> 
 </body>
 </html>

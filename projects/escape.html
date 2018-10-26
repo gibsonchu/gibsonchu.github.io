@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../assets/img/about/favicon.png"/>
+    <title>Escape | Gibson Chu</title>
+    <a name="top"></a>
+</head>
+<body>
+    <a name="top"></a>
+    <div id="landing-home-icon">
+        <a href="../index.html">
+            <img id="home" src="../assets/img/about/transparent.png">
+        </a>
+    </div>
+    <div id="project-container">
+        <div id="heading-textbox">
+            <div class="project-heading-container">
+                <p class="h1 article-title">"Escape", a 2D Graphical Tile-Based Game</p>
+                <p id="article-subline">Developed a tile-rendering world-generation game for players to escape.</p>
+                <p id="article-sub-subline">Role: Developer and Game Designer</p>
+                <p id="article-sub-sub-subline">Tools: Java, IntelliJ</p>
+            </div>
+            <div class="landing-tag-container project-tag-container">
+                <div class="card-tag">Product</div>
+                <div class="card-tag">Design</div>
+            </div>
+        </div>
+        <div id="project-description-container">
+            <div class="project-image-box">
+                <img class="project-image" src="../assets/img/escape/playthrough.gif">
+                <p class="project-image-descrip">Here's a gif of my game being played.</p>
+            </div>
+            <div class="project-description-box">
+                <p class="project-description-heading">Overview</p>
+                <p class="project-description">
+                    This class-based project was focused on creating an engine for generating explorable worlds — providing me an opportunity to work at every stage of development, from ideation to presentation. 
+                    The goal was to learn how to handle a larger piece of code with little starter code, emulating something similar to that of a product development cycle.
+                </p>
+                <p class="project-description">
+                    Let’s define a few terms before getting into how I designed and implemented this 2D tile-based game.
+                </p>
+                <ul class="list">
+                    <li>“Tile-based” means the world consists of 2D grid of tiles, made up of graphical images.</li>
+                    <li>“Game” means that the player will be able to walk around and interact with the world from an overhead perspective.</li>
+                </ul>
+                <p class="project-description">
+                    An example of a more sophisticated version of what I created would be the NES game “Zelda II.”
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/escape/zelda.jpeg">
+                    <p class="project-image-descrip">A screenshot of Zelda II being played.</p>
+                </div>
+                <p class="project-description">
+                    Some key features about this game was that each time a new game was started, a new world would be created, pseudorandomly generating various lengths and widths of rectangular rooms, hallways, and outdoor spaces. Players would be able to move their character around with the “WASD” keys, tasked with the goal of exiting out through a door. Hovering over certain tiles in the world would also let you know what object that tile specifically was. Players would also be able to save and load previous game states so they could continue playing the game from where they left off!
+                </p>
+                <p class="project-description">
+                    Drawing inspiration from several of these other tile-based games, I used an A* algorithm to generate the world and added UI interactions to give the players an interface to play on.
+                </p>
+                <p class="project-description">
+                    Here’s a sample play-through of the login screen. See the first image for a playthrough of the world:
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/escape/escape_login.gif">
+                    <p class="project-image-descrip">A gif of the login screen.</p>
+                </div>
+                <p class="project-description-heading">Takeaways</p>
+                <p class="project-description">This clearly taught me how to think about game design and its integrations with algorithms, especially when building it with a Java data structure, showcasing a fairly complex system. And while I ran into and fixed many (many oh so many) bugs with IntelliJ IDEA, I’m definitely grateful for some of the core concepts I learned with A* and how to create a simple, but easy to understand UI/UX interface for behavioral movements within a game. </p>
+                <p class="project-description">
+                    Now I might not hate on Java flash games so much anymore. :')
+                </p>
+                <p class="project-description">
+                    If I were to continue working on this project, I’d flush out more of the graphics and the user interface of the final look of the game.
+                </p>
+            </div>
+
+        </div>
+        <div id="project-footer-container">
+            <div class="clickable-footer-container">
+                <p class="back-to-top"><a href="#top">Back to top</a></p>
+                <p class="up-next"><a href="nutrition.html">Up next: Nutri-scan</a></p>
+            </div>
+            <!-- <div class="footer-about">
+                <p class="lets-chat">Let's chat in person!</p>
+                <p class="email">gibsonchu@berkeley.edu</p>
+                <div class="social-buttons">
+                    <a href="https://www.linkedin.com/in/gibsontchu/">
+                        <img class="social" id="linked-in" src="">
+                    </a>
+                    <a href="https://twitter.com/thegibsonchu">
+                        <img class="social" id="twitter" src="">
+                    </a>
+                    <a href="https://www.instagram.com/iamgibsonchu/">
+                        <img class="social" id="instagram" src="">
+                    </a>
+                    <a href="https://open.spotify.com/user/1255264474?si=EHKvU5q9Q4iaLqzPL71Qew">
+                        <img class="social" id="spotify" src="">
+                    </a>
+                </div>
+            </div> -->
+        </div>
+    </div>    
+</body>
+</html>
