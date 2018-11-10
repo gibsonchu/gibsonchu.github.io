@@ -4,6 +4,30 @@ body {
     /*background: #F5F5F5;*/
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: var(--main-left-color);
+    color: var(--main-subtext-color);
+}
+
+/** Day + Night Mode **/
+.night {
+  --main-left-color: rgb(35, 39, 37);
+  --main-right-color: rgb(25, 29, 27);
+  --main-text-color: #efefef;
+  --main-subtext-color: #bfbfbf;
+  --card-hover-bg-color: rgb(42, 45, 44);
+  --tag-text-color: #C6E2FF;
+  --tag-bg-color: #0076FF;
+}
+
+.day {
+  --main-left-color: #ffffff;
+  --main-right-color: #F5F5F5;
+  --main-text-color: rgb(25, 29, 27);
+  --card-hover-bg-color: #ededed;
+  --main-subtext-color: #3f3f3f;
+  --tag-bg-color: #C6E2FF;
+  --tag-text-color: #0076FF;
+  transition: 0.2s;
 }
 
 /** FONTS **/
@@ -24,6 +48,7 @@ a {
 
 a:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .h1 {
@@ -31,6 +56,7 @@ a:hover {
   font-weight: 400;
   line-height: 48px;
   text-decoration: none;
+  color: var(--main-text-color);
 }
 
 .h2 {
@@ -38,7 +64,7 @@ a:hover {
   font-weight: 300;
   font-size: 18px;
   line-height: 28.8px;
-  color: RGBA(55, 53, 47, 0.6);
+  color: var(--main-subtext-color);
 }
 
 .h3 {
@@ -46,7 +72,7 @@ a:hover {
   font-weight: 200;
   font-size: 12px;
   line-height: 28.8px;
-  color: RGBA(55, 53, 47, 0.6);
+  color: var(--main-subtext-color);
 }
 
 
@@ -66,44 +92,9 @@ a:hover {
   margin-bottom: 12px;
 }
 
-/** Day + Night Mode **/
-/*.dark {
-  background-color: rgb(25, 29, 27);
-  color: #efefef;
-  transition: 0.2s;
+.card-collection {
+  background-color: var(--main-right-color);
 }
-
-.light {
-  background-color:#f5f5f5;
-  color: #010202;
-  transition: 0.2s;
-}
-
-.light > .card-collection > .dark-mode {
-  background-color: #f5f5f5;
-}
-
-.dark > .card-collection > .dark-mode {
-  background-color: rgb(25, 29, 27);
-}
-
-.light > #landing-textbox > .dark-mode {
-  background-color: #ffffff;
-}
-
-.dark > #landing-textbox > .dark-mode {
-  background-color: rgb(25, 29, 27);
-}
-
-.light > #landing-page > .dark-mode {
-  background-color: #ffffff;
-}
-
-.dark > #landing-page > .dark-mode {
-  background-color: rgb(25, 29, 27);
-}
-*/
-
 
 /** LANDING SITE **/
 
@@ -125,19 +116,18 @@ a:hover {
 /** LEFT SIDE **/
 
 #landing-textbox {
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+  width: 45%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--main-left-color);
+  position: fixed;
 }
 
 #landing-textbox > div {
   width: 60%;
+  margin-top: 50px;
 }
 
 .landing-title {
@@ -146,13 +136,14 @@ a:hover {
 
 .landing-tag-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .landing-card-tag {
-  width: 20%;
   font-size: 16px;
   text-align: center;
-  border: 2px solid #C6E2FF;
+  border: 2px solid var(--tag-bg-color);
+  margin-bottom: 12px;
 }
 
 
@@ -162,13 +153,12 @@ a:hover {
   cursor: pointer;
 }
 
-
 #learn {
   padding-top: 20px;
 }
 
 .dark-mode {
-  padding-top: 70px;
+  /*padding-top: 70px;*/
   display: flex;
 }
 
@@ -292,7 +282,6 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  background: #f5f5f5;
 }
 
 .card {
@@ -305,7 +294,7 @@ a:hover {
   /*box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);*/
   transition: 0.25s;
   /*background-color: #ededed;*/
-  background-color: #F5F5F5;
+  background-color: var(--main-right-color);
   font-weight: 400;
 }
 
@@ -314,8 +303,7 @@ a:hover {
   /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
   cursor: pointer;
   transition: 0.25s;
-  /*background-color: #F5F5F5;*/
-  background-color: #ededed;
+  background-color: var(--card-hover-bg-color);
 }
 
 .card-img {
@@ -353,11 +341,11 @@ a:hover {
 }
 
 .card-title {
-  color: #000000;
+  color: var(--main-text-color);
 }
 
 .card-descrip {
-  color: #3f3f3f;
+  color: var(--main-subtext-color);
 }
 
 .tag-container {
@@ -370,15 +358,15 @@ a:hover {
   font-size: 13px;
   font-weight: 200;
   /*background-color: #1D7CF2; use for dark mode*/
-  background-color: #C6E2FF;
+  
   border-radius: 17px;
-  color: #0076FF;
+  background-color: var(--tag-bg-color);
+  color: var(--tag-text-color);
   /*color: #F5F5F5; use for dark mode*/
 }
 
-
 .not-selected-tag {
-  background-color: #ffffff;
+  background-color: rgba(0,0,0,0);
 }
 
 .card:hover .card-smol {
@@ -468,18 +456,18 @@ a:hover {
   font-weight: 300;
   font-size: 18px;
   line-height: 28.8px;
-  color: RGBA(55, 53, 47, 0.6);
+  color: var(--main-subtext-color);
   margin-bottom: -5px;
 }
 
 #article-sub-subline {
-  color: RGBA(55, 53, 47, 0.6);
+  color: var(--main-subtext-color);
   font-size: 16px;
   margin-bottom: -5px;
 }
 
 #article-sub-sub-subline {
-  color: RGBA(55, 53, 47, 0.6);
+  color: var(--main-subtext-color);
   font-size: 16px;
 }
 
@@ -513,18 +501,20 @@ a:hover {
   line-height: 28.8px;
   margin-bottom: 20px;
   font-weight: 700;
+  color: var(--main-text-color);
 }
 
 .project-description-heading-2 {
   font-size: 24px;
   line-height: 28.8px;
   margin-bottom: 20px;
+  color: var(--main-text-color);
 }
 
 .project-description {
   width: 70%;
   font-size: 16px;
-  color: #151515;
+  color: var(--main-subtext-color);
   line-height: 1.7em;
 }
 
@@ -570,7 +560,7 @@ a:hover {
 .about-description {
   width: 90%;
   font-size: 16px;
-  color: #151515;
+  color: var(--main-subtext-color);
 }
 
 #about-description-container-below {
@@ -580,7 +570,7 @@ a:hover {
 .about-description-below {
   width: 70%;
   font-size: 16px;
-  color: #151515;
+  color: var(--main-subtext-color);
 }
 
 #asuc-image {
@@ -599,7 +589,54 @@ a:hover {
 #about-image-descrip {
   font-weight: 200;
   font-size: 12px;
-  color: RGBA(55, 53, 47, 0.6);
+  color: var(--main-subtext-color);
   text-align: right;
   width: 50%;
+}
+
+@media all and (max-width: 700px) {
+  #landing-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #landing-home-icon {
+    position: fixed;
+    top: 24px;
+    margin: 0;
+  }
+
+  #home { margin: 0; }
+
+  #landing-textbox {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  #landing-textbox div {
+    width: 100%;
+  }
+
+  .dark-mode {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-collection {
+    position: static;
+    background-color: initial;
+  }
+
+  .landing-descrip, .landing-tag-container {
+    display: none;
+  }
+
+  #learn {
+    display: inherit;
+  }
+
+  body {
+    margin: 20px;
+  }
 }
