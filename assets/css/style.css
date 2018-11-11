@@ -4,6 +4,7 @@ body {
     /*background: #F5F5F5;*/
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background-color: var(--main-left-color);
     color: var(--main-subtext-color);
 }
@@ -487,7 +488,7 @@ a:hover {
 .project-image-descrip {
   font-weight: 200;
   font-size: 12px;
-  color: RGBA(55, 53, 47, 0.6);
+  color: var(--main-subtext-color);
   text-align: right;
   width: 80%;
 }
@@ -604,9 +605,10 @@ a:hover {
     position: fixed;
     top: 24px;
     margin: 0;
+    width: 7%;
   }
 
-  #home { margin: 0; }
+  #home { margin: 0; width: 100%;}
 
   #landing-textbox {
     position: relative;
@@ -638,5 +640,25 @@ a:hover {
 
   body {
     margin: 20px;
+  }
+
+  #project-container {
+    width: 80%;
+  }
+
+  .project-description {
+    width: initial;
+  }
+
+  .project-image, .project-image-descrip {
+    width: 100%;
+  }
+
+  .card {
+    min-width: 296px;
+  }
+
+  .card-img {
+    margin: 8px auto;
   }
 }
