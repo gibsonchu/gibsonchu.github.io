@@ -661,4 +661,16 @@ a:hover {
   .card-img {
     margin: 8px auto;
   }
+
+  #about-container {
+    margin: 15vh auto;
+  }
+
+  #about-description-container {
+    flex-direction: column;
+  }
+
+  .about-image, #about-image-descrip, .about-description, .about-description-below {
+    width: 100%;
+  }
 }
