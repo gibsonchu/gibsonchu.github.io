@@ -10,13 +10,13 @@ $(document).ready(function() {
   if (curr_mode == "day") {
     $("body").addClass("day");
     $("body").removeClass("night");
-    $('input[type=checkbox').prop("checked", false);
+    $('input[type=checkbox]').prop("checked", false);
     $("#home").attr("src", icon_path_prefix + "assets/img/about/transparent.png");
     $(".switch-mode-label").text("Use night mode");
   } else {
     $("body").removeClass("day");
     $("body").addClass("night");
-    $('input[type=checkbox').prop("checked", true);
+    $('input[type=checkbox]').prop("checked", true);
     $("#home").attr("src", icon_path_prefix + "assets/img/about/transparent-inverse.png");
     $(".switch-mode-label").text("Use day mode");
   }
