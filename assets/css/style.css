@@ -18,6 +18,7 @@ body {
   --card-hover-bg-color: rgb(42, 45, 44);
   --tag-text-color: #C6E2FF;
   --tag-bg-color: #0076FF;
+  --a-color: #73C2FB;
 }
 
 .day {
@@ -28,6 +29,7 @@ body {
   --main-subtext-color: #3f3f3f;
   --tag-bg-color: #C6E2FF;
   --tag-text-color: #0076FF;
+  --a-color: ;
   transition: 0.2s;
 }
 
@@ -44,7 +46,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #0076FF;
+  color: var(--a-color);
 }
 
 a:hover {
