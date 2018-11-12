@@ -29,7 +29,7 @@ body {
   --main-subtext-color: #3f3f3f;
   --tag-bg-color: #C6E2FF;
   --tag-text-color: #0076FF;
-  --a-color: ;
+  --a-color: #0076FF;
   transition: 0.2s;
 }
 
