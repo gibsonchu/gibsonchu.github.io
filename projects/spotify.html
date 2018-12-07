@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128174779-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128174779-1');
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../assets/img/about/favicon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Spotify: Case Study | Gibson Chu</title>
+    <a name="top"></a>
+</head>
+<body>
+    <a name="top"></a>
+    <div id="landing-home-icon">
+        <a href="../index.html">
+            <img id="home" src="../assets/img/about/transparent.png">
+        </a>
+    </div>
+    <div id="project-container">
+        <div id="heading-textbox">
+            <div class="project-heading-container">
+                <p class="h1 article-title">Spotify: Case Study</p>
+                <p id="article-subline">Redesigned desktop UX/UI and proposed new features.</p>
+                <!-- <p id="article-sub-subline">Role: </p> -->
+                <p id="article-sub-sub-subline">Tools: Google Forms, Figma</p>
+            </div>
+            <div class="landing-tag-container project-tag-container">
+                <div class="card-tag">Product</div>
+                <div class="card-tag">Strategy</div>
+                <div class="card-tag">Design</div>
+                <div class="card-tag">Data</div>
+            </div>
+        </div>
+        <div id="project-description-container">
+            <div class="project-image-box">
+                <img class="project-image" src="../assets/img/spotify/tagline.jpg">
+                <p class="project-image-descrip">Image from Spotify website</p>
+            </div>
+            <div class="project-description-box">
+                <p class="project-description-heading">Background</p>
+                <p class="project-description">
+                    Spotify is a online web and mobile music streaming platform with both free and premium monthly-subscription options. With a library of over 40 million songs, Spotify suggests music that matches the user’s current listening trends and allows users to curate playlists and follow people, among many other functionalities. 
+                </p>
+                <p class="project-description">
+                    Since its launch back in 2008, Spotify has established its brand by using its users’ music history data as the basis for designing machine learning algorithms that not only creates a better curated and personalized playlists for individual users but also showcases creative artists and their work toward a larger audience.
+                </p>
+                <p class="project-description">
+                    With the rise of Spotify’s competitors like Apple Music, Amazon, etc., I wanted to take a look at some of Spotify’s problems regarding user retention as well as ideas for future development. In this case study, I offer potential solutions to address each of these issues. My process was guided Spotify’s Design Principles, personal design intuition, and by conducting user interviews -- with inspiration from similar products and services in the digital audio space.
+                </p>
+                <p class="project-description-heading">The Problem</p>
+                <p class="project-description">
+                    As an avid Spotify user with a strong desire to improve music accessibility and enjoyment,  I will draw from my experience as a listener to improve Spotify’s overall listener user experience.
+                </p>
+                <p class="project-description">
+                    Breaking down this case study, I’ve decided to focus on one main goal and group:
+                </p>
+                <p class="project-description">
+                    Retaining existing premium college student users within Spotify. 
+                </p>
+                <p class="project-description">
+                    I chose to focus on current premium users as they are Spotify’s main source of revenue, resulting in the strongest influence on Spotify’s features. These users are also the ones who decide between purchasing other streaming-music companies services or continuing with Spotify. In addition, since my user group focused on college students (ages 17-25), not all of the results I obtained could be applicable to all premium users. 
+                </p>
+                <p class="project-description">
+                    Let’s take a look at Spotify’s old mission statement. 
+                </p>
+                <p class="project-description">
+                    “Our mission is to unlock the potential of human creativity—by giving a million creative artists the opportunity to live off their art and billions of fans the opportunity to enjoy and be inspired by it.” 
+                </p>
+                <p class="project-description">
+                    While well written, the mission statement doesn’t provide much information as to what makes Spotify stand out as a brand. After conducting a survey on Spotify’s brand and what makes it unique, I was able to whittle it down to a couple specific features: 
+                </p>
+                <ol class="list">
+                    <li>Spotify’s tremendous wealth of user music-streaming data, allowing the company to:</li>
+                    <ol class="list" type="a">
+                        <li>Suggest and curate personalized playlists to introduce new music to users.</li>
+                        <li>Create interesting data analytics regarding user listening habits and music trends.</li>
+                    </ol>
+                    <li>Spotify’s dedicated community for artists to directly promote content to fans.</li>
+                </ol>
+                <p class="project-description">
+                    In addition to these key features, I surveyed and interviewed Spotify Premium users to pinpoint current pain points regarding the service. 
+                </p>
+                <p class="project-description">
+                    This graph showcases how the average user used Spotify during my user research to better understand the use cases for the platform.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/uses-spotify.JPG">
+                    <p class="project-image-descrip">A graph showcasing how the average user uses Spotify.</p>
+                </div>
+                <p class="project-description">
+                    This flow chart walks through how a user would go from deciding to play music to actually playing the music. There a few different ways for a user to reach that end goal.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/music-flow.JPG">
+                    <p class="project-image-descrip">A flowchart detailing how a user would play music on Spotify.</p>
+                </div>
+                <p class="project-description">
+                    This ultimately developed into a three-pronged solution to help retain existing premium users from 17-25 years old: 
+                </p>
+                <ol class="list">
+                    <li>Improvement: Reorganize music and playlist storage UI.</li>
+                    <li>New Feature: Use listener data to improve playlist creation and enhance user profiles.</li>
+                    <li>New Feature: Build a stronger community between local artists and users.</li>
+                </ol>
+                <p class="project-description">
+                    The first point focuses on improving the current user experience for premium users so that their current expectations are up to par with the features Spotify users should have have. The second and third point focus on establishing two new features that help build on Spotify’s success and continue to showcase Spotify as the dominant player in the market.
+                </p>
+                <p class="project-description">
+                    While all of these solutions may not be particularly ground-breaking, they build on top of what Spotify has done in the past, with my own personal spin on what I believe could be solutions to help retain existing premium college-aged student users.
+                </p>
+                <p class="project-description-heading">Reorganize music and playlist storage UI</p>
+                <p class="project-description">
+                    As can be seen by the user workflow diagram, one big area of improvement Spotify needs to fix is reorganizing the flow of music and playlist storage UI. I decided to tackle this in three different areas: 
+                </p>
+                <ol class="list">
+                    <li>“Browse” page</li>
+                    <li>Left Navigation Bar</li>
+                    <li>Following Playlists and Users</li>
+                </ol>
+                <p class="project-description-heading-2">Browse</p>
+                <p class="project-description">
+                    The goal of Spotify’s “Browse” page should be to help the user discover new music and decide what music they should be listening to. It acts like the home page, similar to the home tab on the Spotify mobile.  
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/browse-view.jpeg">
+                    <p class="project-image-descrip">An image of what Spotify's desktop "Browse" page looks like.</p>
+                </div>
+                <p class="project-description">
+                    The Browse page currently contains several tabs listed across the top — Overview, Podcasts, Charts, etc. — as a way to help users filter through how they would like to organize their music before selecting what to listen to. Let’s call this the page’s nav bar. Yet, these tabs don’t have a clear organized structure as to how it helps a user filter through different types of music. In addition, the Discover tab is one of the last few tabs in the top bar, not following the goal of what Spotify’s Browse page should be aiming to do.
+                </p>
+                <p class="project-description">
+                    Because of this, I decided to clean up the Browse nav bar by only listing six main categories:  Overview, Discover, What’s Nearby, New Releases, Charts, and Genres & Moods. The order prioritizes what is important from left to right. I’ve removed Podcasts, Concerts, and Videos from the nav bar because these individual tabs were not used as often as the other tabs. In addition, these tabs could be categorized under some of the current existing tabs — Genres & Moods for Podcasts and Videos, and the new tab I created, What’s Nearby (this tab will be discussed further under the third solution “Build a stronger community for local artists and users.”
+                </p>
+                <p class="project-description">
+                    I’ll go into further detail what each of these tabs entail after I go further into some issues with the Overview tab.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/revised-browse.png">
+                    <p class="project-image-descrip">My mid-fidelity mockup of what the revised "Browse" page would look like.</p>
+                </div>
+                <p class="project-description">
+                    A few individuals commented on some of the content shown in the Overview tab on the desktop application, discussing the lack of recommended playlists compared to the mobile version. On the desktop, there is only one row of recommended playlists, with the rest of the tab consisting of “groupings” of playlists, where the user can click into the category before accessing another tab from the Browse navigation bar.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/browse_desktop.gif">
+                    <p></p>
+                    <img class="project-image" id="spotify-duo" src="../assets/img/spotify/home_mobile.gif">
+                </div>
+                <p class="project-description">
+                    The mobile application on the other hand consists of many rows of recommended playlists for the user, mixing up topics such as genres, recently played, related artists, made for you, etc. This fits the goal of the Browse page, curating personalized playlists that introduce new music to users. Compare this to services like Netflix, Steam, or Youtube, that constantly do this to ensure that the user is exposed to as much content as possible.
+                </p>
+                <p class="project-description">
+                    Inspired by the mobile application, I decided to enforce the first two rows on the desktop to be “Made for User” and “Recently Played.” The first row pulls from the playlists created for Made for You on the left navigation bar, as users stated that they wanted personalized curated playlists. The second row comes from users who stated that they wanted to be able to pick up right where they left off listening from before. Since these will be the first two rows of music a user will see upon opening the Spotify desktop application, this addresses the purpose of the Browse page immediately.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/browse_overview_scroll.png">
+                    <p class="project-image-descrip">My mid-fidelity mockup of what the revised "Browse" page would look like, scrolled down.</p>
+                </div>
+                <p class="project-description">
+                    The following rows provide more opportunities for Spotify to build on the Browse page. The third row have cards for What’s Nearby, New Releases, and Charts, directing players to other filtered tabs, similar to the original Browse page. Finally, the rest of the tabs the user can scroll down to see will be other recommendations based on preferences toward certain artists, other playlists, music genres, etc. 
+                </p>
+                <p class="project-description-heading-2">Left Navigation Bar</p>
+                <p class="project-description">
+                    The goal of Spotify’s Left Navigation Bar should be to filter a user’s library of music they personally curated, whether it be through playlists or other modes. 
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" id="spotify-duo" src="../assets/img/spotify/left-nav-bar_desktop.png">
+                    <p></p>
+                    <img class="project-image" id="spotify-duo" src="../assets/img/spotify/my-library_mobile.jpeg">
+                </div>
+                <p class="project-description">
+                    With more space on the desktop application, Spotify has decided to separate personal playlists from the rest of your library opposed to the mobile application where Playlists are located within “Your Library.”
+                </p>
+                <p class="project-description">
+                    Since the desktop application already has more space and the goal of the navigation bar is to help a user filter through their music, I decided to take the visual representation of “Your Library” and turn it into another page that has a navigation bar on the top of the page. This allows the user to have the navigation bar on the desktop be solely focused on the playlists a user creates or follows.
+                </p>
+                <p class="project-description">
+                    This new page is called “My Music” and is listed as the same categorical item as “Browse” and “Radio” as a user’s saved music should be given the same priority. This also allows separates filtering a user’s personal library from playlists, which are special curated versions of music they want to listen to, whether or not those songs are part of their music library.
+                </p>
+                <p class="project-description">
+                    All of the tabs that are originally included on the left navigation bar under My Library have been moved over as a navigation bar on the My Music page, except for “Made for You”. This was moved to the Browse page’s Discover tab, as Made for You is something recommended by Spotify and should be listed under Discover, more so than one’s own library of music.
+                </p>
+                <p class="project-description">
+                    Because people mentioned that they often don’t create playlists during their typical Spotify workflow, I’ve decided to make the playlist button less prominent and include it next to the playlists header in the left navigation bar.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/browse_discover.png">
+                    <p class="project-image-descrip">My mid-fidelity mockup of what the revised "Browse" page and "Discover" tab would look like.</p>
+                </div>
+                <p class="project-description">
+                    When I prompted some individuals about what they knew about playlists, few of them knew you could create folders or edit playlists by right clicking the playlist on the nav bar. Thus, to make this much more obvious, I’ve taken Spotify’s ellipses to indicate settings for each of the playlists. I also added a folder icon to each of the folders, so that it makes it clearer to a user scanning their navigation bar which playlists are located within folders.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/my-music.png">
+                    <p class="project-image-descrip">My mid-fidelity mockup of what the "My Music" page would look like.</p>
+                </div>
+                <p class="project-description">
+                    With the rest of the tabs in My Music, you can sort through your playlists similarly to the Browse page, but all of them collectively are on the same page, with various filters of Songs, Albums, etc. This ensures that Browse is a page focused on music you could learn about and that My Music is a page dedicated to a user’s personal music library.
+                </p>
+                <p class="project-description-heading-2">Following Playlists and Users</p>
+                <p class="project-description">
+                    The goal of Spotify’s ability to Follow Playlists and other Users is to allow a user to share their music with one another.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/user_profile.png">
+                    <p class="project-image-descrip">My user profile on Spotify.</p>
+                </div>
+                <p class="project-description">
+                    Playlists are currently structured into three types of categories, public, private, and collaborative playlists. Public playlists can be viewed by anybody on a user’s profile page and followed by clicking on the Follow button. Private playlists are only available for the user who created the playlist, located on the left navigation bar. Collaborative playlists are available for the user who created the playlist, as well as anyone the user shares the playlist link with, which is also located only on the left navigation bar if a user follows it. 
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/user-profile-example.jpeg">
+                    <p class="project-image-descrip">An example of a user profile on Spotify.</p>
+                </div>
+                <p class="project-description">
+                    On a user profile, a person can see a person’s public playlists and followers. There is nothing about a person’s private or collaborative playlists listed on a user’s profile. I’ve added “Playlists Contributed To” as one of the tabs to the user profile, to help open up playlists contributed out to the public, allowing for these types of playlists to be invited to edit to anyone you choose to, similar to how playlists can be currently edited.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/user_overview.png">
+                    <p class="project-image-descrip">My mid-fidelity mockup of what a user overview page should look like.</p>
+                </div>
+                <p class="project-description">
+                    Spotify also brings in the social aspect of sharing music, allowing users to follow others to keep up with their music by seeing what they are listening to. Stepping into the following and followers page, you can click to follow or unfollow somebody on the right side, but cannot block or report somebody.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/following-blurred.jpg">
+                    <p class="project-image-descrip">An example of a user profile following page on Spotify.</p>
+                </div>
+                <p class="project-description">
+                    While you may be able to listen to your music on private mode, you cannot block people from following your music and see what your listening habits are. Drawing from other social media products like Facebook, Twitter, or Youtube, a potential blocking schema might be as follows: once a user blocks somebody, any following between the two users no longer exists, and the blocked user should not be able to search or re-follow the blocking user. The user who blocked the other may still be able to search up the other if they want to unblock them, but limited information will be portrayed on their profile. 
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/user_followers.png">
+                    <p class="project-image-descrip">My mid-fidelity mockup of what a user follower page should look like.</p>
+                </div>
+                <p class="project-description">
+                    In addition, I’ve changed the “Follow” button to an icon of a person with a plus, and added a flag icon for reporting/blocking, a Share icon, and “…” for settings. These icons are the same on one’s own personal user page and on their playlists. I did keep the play and follow buttons on playlists separate from following individual users or artists as this feature is recognized as more people when asked in the user research stated that they followed playlists more often than users.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/playlist.png">
+                    <p></p>
+                    <img class="project-image" src="../assets/img/spotify/playlist_followers.png">
+                </div>
+                <p class="project-description">
+                    This wraps up the first section improving Spotify’s music and playlist storage UI. While going through these changes, I recognized that one user mentioned enjoying the curated playlists based on the yearly wrapups Spotify creates for each of its users, including some of the stats they share on social media for users. This next feature I suggest builds on this idea into the Spotify platform itself. 
+                </p>
+                <p class="project-description-heading">Use listener data to improve playlist creation and enhance user profiles</p>
+                <p class="project-description">
+                    Not only does Spotify have a large collection of user data to extrapolate recommended music, but it’s also known for its wildly successful end-of-year listening statistics, such as 2016’s “Thanks 2016, It’s been weird” and 2017/2018’s “wrapup” detailing information such as minutes listened in the year and most popular songs.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/2018-wrapped.png">
+                    <p class="project-image-descrip">An image of Spotify's 2018 wrapped.</p>
+                </div>
+                <p class="project-description">
+                    Based on these positive reactions to Spotify, people are definitely interested in the quantitative information about their listening habits. Not only that, but there are many health applications that provide statistics about sleeping, exercise, or eating habits, such as Apple’s own Health app, Strava, or MyFitnessPal. People are even interested in phone screen time usage. All of this data helps individual users to better track their own time usage to help each of them maximize the work they are outputting or help change their behavior for the better. Or they just find their personal data interesting and fun to track!
+                </p>
+                <p class="project-description">
+                    Either way, to continue with this positive trend of user engagement with data, I propose that Spotify adds a new tab to its user profile that provides users their listening habit data in fun visually appealing ways. Not only does this keep users on the application longer, but will incentive users to continue exploring their music habits to discover new music, whether it be through searching for playlists and songs that are similar to the tastes they’ve acquired or playing songs drastically different from music they’ve become accustomed to.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/user_stats.png">
+                    <p class="project-image-descrip">My mid-fidelity mockup of what the "Your Stats" tab on a user profile would look like.</p>
+                </div>
+                <p class="project-description">
+                    One main suggestion I believe could be a staple data visualization would be a radar chart of your “sonic fingerprint” of the top songs you listened to that week, month, or year. This “sonic fingerprint” comes from the New York Times <a href="https://www.nytimes.com/interactive/2018/08/09/opinion/do-songs-of-the-summer-sound-the-same.html">article</a>, “Do Songs of the Summer Sound the Same?”
+                </p>
+                <p class="project-description">This fingerprint tracks five different variables: loudness, valence, acousticness, danceability, and energy. 
+                </p>
+                <ol class="list">
+                    <li>Loudness: Average volume of the song.</li>
+                    <li>Valence: How cheerful the song sounds.</li>
+                    <li>Acousticness: Likelihood the song uses acoustic instruments.></li>
+                    <li>Danceability: Strength and regularity of the beat.</li>
+                    <li>Energy: How fast and noisy and song sounds.</li>
+                </ol>
+                <p class="project-description">
+                    In addition to the “sonic fingerprint,” your stats would also show you the number of songs you listened to for that week, month or year. The top three songs for that respective period of time would be listed, including the number of times you played that song.
+                </p>
+                <p class="project-description">
+                    These three stats would be listed on the overview of your user profile. I am not sure what information Spotify has available or would be willing to share to a user, but here are a few other suggestions that could be included on the your stats page:
+                </p>
+                <ul class="list">
+                    <li>Popularity in one user’s taste in music compared to their region</li>
+                    <li>Top 10 Songs of the Week/Month/Year</li>
+                    <li>Top Genre</li>
+                    <li>Top Artists</li>
+                    <li>Time of Day Listened to Music</li>
+                    <li>Songs Played on Desktop vs. Mobile</li>
+                    <li>Slider to see how your music taste has changed over a period of time</li>
+                </ul>
+                <p class="project-description">
+                    I’m most excited to see this feature roll out because it could heavily build on Spotify’s brand as a data driven music streaming service. This feature would influence the user to continue using Spotify in order for them to continue to track their listening habits on one platform, whether it be through the curated Spotify playlists or to allow users to better understand what they listen to.
+                </p>
+                <p class="project-description">
+                    In addition, there would be more curated playlists users could choose from that are not just “Discover Weekly” or “Release Radar.” This could be playlists like “Tastebreakers” or “Top 100” that help users find new music or relisten to music they’ve heard in the past to help them find what they’ve been looking for. 
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/tastebreakers.png">
+                    <p class="project-image-descrip">An image of Spotify's 2018 tastebreaker playlist.</p>
+                </div>
+                <p class="project-description">
+                    Drawing from the pie chart from above, a huge chunk of time is given to a user to listen to their own personal playlist, so anyway to help expose a user to new music to add to their own playlist would be ideal. Sharing a user’s data would also be easily accessible for them to do anytime they want to, instead of having to wait for a yearly email about their listening habits for that year. 
+                </p>
+                <p class="project-description">
+                    Keep in mind that sharing this data to a user would only be beneficial because unlike video-streaming or social media sites like Netflix and Facebook, listening to music/podcasts is rarely considered to be a “time-waster.” Of course, how that data is shared needs to be carefully composed otherwise there may be backlash, similar to <a href="https://www.nytimes.com/2017/12/17/business/media/netflix-spotify-marketing.html">comments</a> seen when Netflix followed a similar marketing strategy in 2017 to Spotify’s 2016 wrapup.
+                </p>
+                <p class="project-description">
+                    The biggest drawback of course is the inability to use this data as a marketing push at the end of the year as Spotify has done for the past few years. Taking advantage of the chance to share one’s info on a billboard in Times Square or pushing stats all over social media has been a great favorite of many Spotify users. By allowing users to consistently see their own data would eliminate the element of surprise that comes along with Spotify’s wrapped. 
+                </p>
+                <p class="project-description">
+                    However, if Spotify allowed the data you see on your tab to be as dramatically visual or as easily shareable as each year’s wrapped stats, Spotify would be able to more consistently use this as a marketing push throughout the year. There could be more themes that go along with the data, such as comparing different holiday listening habits or celebrating artist’s birthdays throughout the year. 
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/spotify-sorry.jpeg">
+                    <p class="project-image-descrip">An image of Spotify's 2016 "It's been weird" ad campaign.</p>
+                </div>
+                <p class="project-description">
+                    For example, on Valentine’s day, Spotify could showcase on the “Your Stats” tab a Valentine themed set of stats, focused on the number of love songs listened to, top love songs replayed, popular love songs by region, and even a curated list of top love songs that range a variety of genres. 
+                </p>
+                <p class="project-description">
+                    So to sum it up, here are a few pros and cons about rolling out such a feature:
+                </p>
+                <p class="project-description">
+                    Pros:
+                </p>
+                <ol class="list">
+                    <li>Easily-accessible data to users to better allow users to understand their music tastes.</li>
+                    <li>Visually-appealing and easily-shareable graphics for more consistent marketing throughout the year.</li>
+                    <li>Larger database of personalized streaming habits will build loyalty for fans to continue using Spotify, building on Spotify’s mission.</li>
+                </ol>
+                <p class="project-description">
+                    Cons:
+                </p>
+                <ol class="list">
+                    <li>Shareable data becomes commonplace and less of a unique experience at the end of the year.</li>
+                    <li>Personal data about music habits may be too personal if not displayed in a playful, fun manner.</li>
+                </ol>
+                <p class="project-description">
+                    Creating this new tab will take a lot of user research and testing to see how best Spotify can create an experience for everyone to enjoy, but the results will be more than worthwhile to keep Spotify’s fans engaged in sharing their streaming habits with Spotify’s eye-catching graphics throughout the year.
+                </p>
+                <p class="project-description">
+                    This next feature I’ll be talking about focuses less on the individual Spotify user and targets the relationship between a user and local artists in their area. Something Spotify could take more advantage of is the use of location services and better connecting users to learning more about local artists, potentially translating into concerts and merchandise being sold.
+                </p>
+                <p class="project-description-heading">Build a stronger community between local artists and users</p>
+                <p class="project-description">
+                    The current implementation of connecting artists and users is through the artist profile and the “Concerts” tab on the Browse page. I’m going to focus mainly on the “Concerts” tab as I believe this best consolidates all of the potential artists a user would listen to in one location.
+                </p>
+                <p class="project-description">
+                    If you take a look at the “Concerts” tab, Spotify allows you to select your location and recommend artists to you that are either similar to your past listening history or popular artists that are in the top charts.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/browse_concert.JPG">
+                    <p class="project-image-descrip">An image of the "Browse" page "Concert" tab.</p>
+                </div>
+                <p class="project-description">
+                    Through the user research phase, I discovered that users often did not use this tab, often going directly to an artist’s page or just searching up online to find concert dates for a specific artist. When asked,  the biggest reasons users did not use this tab is because they did not know it existed or did not find it useful to see where these concert dates were in relation to each other.
+                </p>
+                <p class="project-description">
+                    Noting this problem with the “Concerts “ tab, I also wanted to integrate a new feature that would be able to connect users more to different regions of music, whether it be local artists that are currently up-and-coming or music throughout the years from a specific region. 
+                </p>
+                <p class="project-description">
+                    Music is often well integrated into a city/town’s culture and Spotify should recognize that. This feature would not only benefit people who live in a certain region, but would also help people travelling to different places so that they could learn more about the place they are visiting. This is an avenue for Spotify to break into the travel industry.
+                </p>
+                <p class="project-description">
+                    For example, if I was travelling to New York, if I were to open up my Spotify desktop application, I would see a notification to check out music from AJR, a New York band, or to listen to a curated hip hop music playlist from the 90s. 
+                </p>
+                <p class="project-description">
+                    Earlier, when I revamped the Browse page and updated the Browse navigation bar, I added a new tab called “What’s Nearby.” This tab condenses the old tab “Concerts,” adds a calendar with more detail about concert dates, and includes curated-recommended playlist based on the local music talent.
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/browse_whats-nearby.png">
+                    <p class="project-image-descrip">A mid-fidelity mockup of what the "What's Nearby" tab would look like.</p>
+                </div>
+                <p class="project-description">
+                    This change helps add more utility to the old “Concerts” tab by integrating a “Concerts” section, which is a calendar that users can see to better plan out when concerts are. Thus, the flow of selecting concerts is less of scanning down a list of artists, and if a focus on selecting a date in the calendar and discovering what artists have concert on those dates. 
+                </p>
+                <p class="project-description">
+                    This change in flow will require some more A/B testing to see if users prefer choosing on available dates over choosing artists as the recommended tab should only recommend artists users enjoy or would listen to.This shorter list based on recommendations or popularity allows for the content to be more easily digestible for users, instead of a long list of information. 
+                </p>
+                <p class="project-description">
+                    Following the “Concerts” section, there will be rows of recommended playlists as discussed above. This could include “This is” a local artist playlist or a location playlist related to a specific genre. This would also be the place to promote videos or podcasts from the region as well.
+                </p>
+                <p class="project-description">
+                    To help promote the introduction of this feature, Spotify can use their Spotify codes on these playlists and create ads focused on sharing playlists specific to a region. Spotify should want to “celebrate” the variety of music spawned from cities, whether it be from jazz in New Orleans all the way to rock in San Francisco. 
+                </p>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/spotify-codes.jpeg">
+                    <p class="project-image-descrip">An image taken from Spotify codes.</p>
+                </div>
+                <div class="project-image-box">
+                    <img class="project-image" src="../assets/img/spotify/spotify-subway.jpeg">
+                    <p class="project-image-descrip">An image of a Spotify subway ad.</p>
+                </div>
+                <p class="project-description">
+                    These ads would be listed on public transit, airports or any location near popular tourist attractions to help get people more involved in the music history surrounding a specific location. It would also be great to post ads around local bars or coffee shops to help promote local artists to get more users streaming their music. 
+                </p>
+                <p class="project-description">
+                    Not only that, but creating pop-up notifications for users who open up their mobile Spotify after they traveled a new location would be another way to utilize the new “What’s Nearby” tab. They could be directed to these new playlists immediately and learn more about the artists within a region.
+                </p>
+                <p class="project-description">
+                    After talking with a local artist who shares their music on Spotify, they said that they often found it difficult to share their music on Spotify itself, often having to go through different social media platforms to consistently share their music. Currently Spotify recognizes these artists based on genre and sharing these artists based on location would be another way to get their name out there.
+                </p>
+                <p class="project-description">
+                    The biggest drawback is the amount of benefit Spotify gains from providing this type of feature. Since my focus is on retaining current users and not bringing in new customers, this feature may not necessarily cause a user to want to stick with Spotify unless Spotify becomes heavily integrated with it means to travel. 
+                </p>
+                <p class="project-description">
+                    On the technological side, there must be a huge engineering effort required to establish the back-end and may not pan out to draw as many users as Spotify would like. There will need to be information pulled from the mobile device or desktop to know a user’s location and a user must allow for notifications to be turned on in order to be notified about this new feature. 
+                </p>
+                <p class="project-description">
+                    Marketing this new Spotify feature will also require lots of collaboration and timing between artists, the city, and many individual businesses involved in the travel industry. Joining forces with noise-cancelling headphone companies or other products focused on listening to music on the go may also prove beneficial as more often than not, this feature would be utilized by users on the go. 
+                </p>
+                <p class="project-description">
+                    As with my last recommended feature, let me sum up some of the pros and cons of introducing the new “What’s Nearby” feature:
+                </p>
+                <p class="project-description">
+                    Pros:
+                </p>
+                <ol class="list">
+                    <li>Revamps the “Concerts” tab so it is more useful for users to book artists.</li>
+                    <li>Establishes Spotify in the travel industry by celebrating the music history within in a region.</li>
+                    <li>Creates another avenue for local artists to be discovered.</li>
+                </ol>
+                <p class="project-description">
+                    Cons:
+                </p>
+                <ol class="list">
+                    <li>Potentially provides less of a benefit to retain current users and will require more market testing to see if such a feature is needed/wanted to by the current user base.</li>
+                    <li>Requires a huge initiative (time, money, and human labor) from Spotify to integrate and promote location services as part of the application to help recommend music.</li>
+                </ol>
+                <p class="project-description">
+                    While not a novel idea, this different avenue builds on top of Spotify’s mission to share more music with more individuals, especially with individuals that are often on the go (such as college students), visiting and traveling to new locations.
+                </p>
+                <p class="project-description-heading">Conclusion</p>
+                <p class="project-description">
+                    To summarize, I’ve created three different points to build on top of what Spotify has done in the past, adding my own personal spin on what I believe could be solutions to help retain existing premium college-aged student users.
+                </p>
+                <ol class="list">
+                    <li>Improvement: Reorganize music and playlist storage UI.</li>
+                    <li>New Feature: Use listener data to improve playlist creation and enhance user profiles.</li>
+                    <li>New Feature: Build a stronger community between local artists and users.</li>
+                </ol>
+                <p class="project-description">
+                    Again, the first point focuses on improving the current user experience for premium users so that their current expectations are up to par with the features Spotify users should have have. The second and third point focus on establishing two new features that help build on Spotify’s success and continue to showcase Spotify as the dominant player in the market.
+                </p>
+                <p class="project-description">
+                    In future iterations of this redesign, I would want to explore how Spotify utilizes Friend Activity as a way to share music between users. This would require some more work focused on understanding how Spotify plans on integrating social channels within its platform.
+                </p>
+                <p class="project-description">
+                    I thoroughly enjoyed learning about how students interact with Spotify and their music listening habits, especially how they differentiated from mine. I also found it interesting to plan out how to both market and roll out a new feature from a higher scale. I learned about the smaller frustrations behind some functions in the product and the more general problems students had with the work flow students had.
+                </p>
+                <p class="project-description">Check out the <a href="https://www.figma.com/file/aFglokDF6TuEGqtsMwfMIpNG/Spotify-Case-Study">Figma desktop views</a> of all the changes I made to the Spotify UI.</p>
+        </div>
+        <div id="project-footer-container">
+            <div class="clickable-footer-container">
+                <p class="back-to-top"><a>Back to top</a></p>
+                <p class="up-next"><a href="hustle.html">Up next: Hustle</a></p>
+            </div>
+            <!-- <div class="footer-about">
+                <p class="lets-chat">Let's chat in person!</p>
+                <p class="email">gibsonchu@berkeley.edu</p>
+                <div class="social-buttons">
+                    <a href="https://www.linkedin.com/in/gibsontchu/">
+                        <img class="social" id="linked-in" src="">
+                    </a>
+                    <a href="https://twitter.com/thegibsonchu">
+                        <img class="social" id="twitter" src="">
+                    </a>
+                    <a href="https://www.instagram.com/iamgibsonchu/">
+                        <img class="social" id="instagram" src="">
+                    </a>
+                    <a href="https://open.spotify.com/user/1255264474?si=EHKvU5q9Q4iaLqzPL71Qew">
+                        <img class="social" id="spotify" src="">
+                    </a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="../assets/js/script.js"></script>       
+</body>
+</html>

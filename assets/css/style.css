@@ -384,6 +384,10 @@ a:hover {
   background-size: 50%;
 }
 
+#spotify-img {
+  background-image: url(../img/spotify/spotify-logo.png);
+}
+
 #hustle-img {
   background-image: url(../img/hustle/logo_rectangle.png);
 }
@@ -595,6 +599,11 @@ a:hover {
   color: var(--main-subtext-color);
   text-align: right;
   width: 50%;
+}
+
+#spotify-duo {
+  height: 500px;
+  width: auto;
 }
 
 @media all and (max-width: 700px) {
